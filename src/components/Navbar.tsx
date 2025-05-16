@@ -77,16 +77,6 @@ export default function Navbar() {
                         </Link>
                     ))}
 
-                    <div className="pt-2 text-gray-600">
-                        <Link href="/login" onClick={() => setIsMobileOpen(false)}>
-                            Login / Register
-                        </Link>
-                        <div className="flex space-x-4 mt-3 text-lg">
-                            <FaSearch />
-                            <FaHeart />
-                            <FaShoppingBag />
-                        </div>
-                    </div>
                 </div>
             )}
         </header>

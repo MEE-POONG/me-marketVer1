@@ -9,7 +9,7 @@ const CategoriesInHome: React.FC = () => {
                     <div className="w-full lg:w-1/2 p-0">
                         <div
                             className="categories__item categories__large__item set-bg"
-                            data-setbg="img/categories/category-1.jpg"
+                             style={{ backgroundImage: "url(/images/test01.jpg)" }}
                         >
                             <div className="categories__text">
                                 <h1>Women’s fashion</h1>
@@ -28,7 +28,7 @@ const CategoriesInHome: React.FC = () => {
                             <div className="w-1/2 p-0">
                                 <div
                                     className="categories__item set-bg"
-                                    data-setbg="img/categories/category-2.jpg"
+                                    style={{ backgroundImage: "url(/images/test01.jpg)" }}
                                 >
                                     <div className="categories__text">
                                         <h4>Men’s fashion</h4>
@@ -40,7 +40,7 @@ const CategoriesInHome: React.FC = () => {
                             <div className="w-1/2 p-0">
                                 <div
                                     className="categories__item set-bg"
-                                    data-setbg="img/categories/category-3.jpg"
+                                     style={{ backgroundImage: "url(/images/test01.jpg)" }}
                                 >
                                     <div className="categories__text">
                                         <h4>Kid’s fashion</h4>
@@ -52,7 +52,7 @@ const CategoriesInHome: React.FC = () => {
                             <div className="w-1/2 p-0">
                                 <div
                                     className="categories__item set-bg"
-                                    data-setbg="img/categories/category-4.jpg"
+                                     style={{ backgroundImage: "url(/images/test01.jpg)" }}
                                 >
                                     <div className="categories__text">
                                         <h4>Cosmetics</h4>
@@ -64,7 +64,7 @@ const CategoriesInHome: React.FC = () => {
                             <div className="w-1/2 p-0">
                                 <div
                                     className="categories__item set-bg"
-                                    data-setbg="img/categories/category-5.jpg"
+                                     style={{ backgroundImage: "url(/images/test01.jpg)" }}
                                 >
                                     <div className="categories__text">
                                         <h4>Accessories</h4>

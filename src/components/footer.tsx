@@ -19,7 +19,7 @@ const PageFooter: React.FC = () => {
                                 eiusmod tempor incididunt cilisis.
                             </p>
                             <div className="footer__payment flex gap-2 mt-4">
-                                <img src="images/logo1.png" alt="" />
+                                <img src="images/logo1.png" className="w-[50px]" alt="" />
                             </div>
                         </div>
                     </div>
