@@ -1,23 +1,15 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
 import PageLayout from "@/components/Layout";
 import CategoriesInHome from "@/containers/Homepages/categoriesInHome";
+import NewProducts from "@/containers/Homepages/NewProducts";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
     <PageLayout>
       <div className="">
         <CategoriesInHome/>
+        <NewProducts/>
       </div>
     </PageLayout>
   );
