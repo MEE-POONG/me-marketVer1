@@ -51,7 +51,7 @@ export default function Navbar() {
                         <span className="absolute -top-3 -right-3 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">2</span>
                     </div>
                     <div className="relative md:inline">
-                        <FaShoppingBag size={18} className="hover:text-red-600 cursor-pointer" />
+                       <a href="/shop-Cart"> <FaShoppingBag size={18} className="hover:text-red-600 cursor-pointer" /></a>
                         <span className="absolute -top-3 -right-3 bg-blue-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">2</span>
                     </div>
 

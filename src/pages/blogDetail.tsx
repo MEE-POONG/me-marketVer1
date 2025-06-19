@@ -1,6 +1,7 @@
 import PageLayout from "@/components/Layout";
 import { useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const BlogDetail: React.FC = () => {
     return (
@@ -47,12 +48,12 @@ const BlogDetail: React.FC = () => {
                                         <div className="flex flex-wrap -mx-2">
                                             <div className="w-full sm:w-1/2 px-2 mb-4">
                                                 <div className="blog__details__btn__item">
-                                                    <h6><a href="#" className="text-blue-600"><i className="fa fa-angle-left"></i> Previous posts</a></h6>
+                                                    <h6><a href="#" className="text-blue-600"><i className=""><MdOutlineKeyboardArrowLeft /></i> Previous posts</a></h6>
                                                 </div>
                                             </div>
                                             <div className="w-full sm:w-1/2 px-2 mb-4">
                                                 <div className="blog__details__btn__item blog__details__btn__item--next text-right">
-                                                    <h6><a href="#" className="text-blue-600">Next posts <i className="fa fa-angle-right"></i></a></h6>
+                                                    <h6><a href="#" className="text-blue-600">Next posts <i className=""><MdOutlineKeyboardArrowRight /></i></a></h6>
                                                 </div>
                                             </div>
                                         </div>

@@ -197,7 +197,7 @@ const ProductDetail: React.FC = () => {
                                     <div className="product__item__pic set-bg" style={{ backgroundImage: "url(/images/test01.jpg)" }}>
                                         <div className="label new">New</div>
                                         <ul className="product__hover">
-                                            <li><a href="/" className=""><span className=""><FaRegEye /></span></a></li>
+                                            <li><a href="/productDetail" className=""><span className=""><FaRegEye /></span></a></li>
                                             <li><a href="#"><span className=""><FaRegHeart /></span></a></li>
                                             <li><a href="#"><span className=""><LiaShoppingBagSolid /></span></a></li>
                                         </ul>
