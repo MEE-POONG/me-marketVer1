@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaHome, FaRegEye, FaRegHeart, FaStar } from "react-icons/fa";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { MdKeyboardArrowUp, MdOutlineArrowDropDown } from "react-icons/md";
+import SearchBar from '../components/SearchBar';
 
 const categories = {
     "สินค้าไอที": ["Laptop", "Smartphones", "Accessories"],
@@ -31,9 +32,9 @@ export default function ShopPage() {
 
     return (
         <PageLayout>
-            <div className="container mx-auto">
+            <div className="container mx-auto px-4">
                 {/* breadcrumb */}
-                <div className="breadcrumb-option">
+                <div className="breadcrumb-option ">
                     <div className="flex">
                         <div className="w-full">
                             <div className="flex items-center gap-2">
@@ -48,13 +49,18 @@ export default function ShopPage() {
                 </div>
 
                 <section className="shop spad">
+                    <div>
+                        Search
+                        <input type="search" name="" id="" />
+                    </div>
                     <div className="container mx-auto px-4">
                         <div className="grid lg:grid-cols-12 gap-5">
+
                             {/* Filter */}
                             <div className="col-span-3">
-                                <div>
+                                <div className="hidden lg:block">
                                     <a href="" className="font-bold">ALL</a>
-                                    <div className="max-w-sm mx-auto space-y-1 mt-3">
+                                    <div className="max-w-sm mx-auto space-y-1 mt-3 ">
                                         <p>หมวดหมู่</p>
                                         {Object.entries(categories).map(([categoryName, items]) => (
                                             <div
@@ -84,44 +90,6 @@ export default function ShopPage() {
                                             </div>
                                         ))}
                                     </div>
-                                    
-                                    <div className="max-w-sm mx-auto mt-5">
-                                        {/* Title */}
-                                        <h6 className="text-lg font-bold text-black mb-2 border-b-2 border-red-600 w-max pb-1">
-                                            SHOP BY PRICE
-                                        </h6>
-
-                                        {/* Slider Range (simulate double slider with two inputs) */}
-                                        <div className="flex flex-col space-y-1">
-                                            <div className="relative">
-                                                <input
-                                                    type="range"
-                                                    min={0}
-                                                    max={200}
-                                                    value={minPrice}
-                                                    onChange={(e) => setMinPrice(Number(e.target.value))}
-                                                    className="w-full accent-red-600"
-                                                />
-                                                <input
-                                                    type="range"
-                                                    min={0}
-                                                    max={50000}
-                                                    value={maxPrice}
-                                                    onChange={(e) => setMaxPrice(Number(e.target.value))}
-                                                    className="w-full mt-1 accent-red-600"
-                                                />
-                                            </div>
-
-                                            {/* Price Display */}
-                                            <div className="flex items-center justify-between text-sm text-gray-700">
-                                                <span>Price: ${minPrice} - ${maxPrice}</span>
-                                                <button className="px-4 py-1 border border-red-600 text-red-600 font-bold text-sm rounded hover:bg-red-600 hover:text-white transition">
-                                                    FILTER
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
 
                                 </div>
 

@@ -71,15 +71,15 @@ export default function NewProducts() {
                             <h4>New product</h4>
                         </div>
                     </div>
-                    <div className="w-full md:w-2/3">
-                        <ul className="filter__controls flex flex-wrap gap-4 justify-end">
+                    <div className="w-full lg:w-2/3">
+                        <ul className=" flex flex-wrap gap-4 lg:justify-end">
                             {categories.map((cat) => (
                                 <li
                                     key={cat}
                                     onClick={() => setActiveCategory(cat)}
-                                    className={`cursor-pointer transition font-medium 
+                                    className={`cursor-pointer transition font-medium text-xs md:text-sm
                                         ${activeCategory === cat
-                                            ? "text-red-600 underline decoration-red-500 underline-offset-4"
+                                            ? "text-red-600 underline decoration-red-500 underline-offset-4 font-black"
                                             : "text-gray-600 hover:underline hover:decoration-red-500 hover:underline-offset-4"
                                         }`}
                                 >
@@ -91,7 +91,7 @@ export default function NewProducts() {
                 </div>
 
                 {/* Grid with AnimatePresence */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 property__gallery">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 property__gallery">
                     {/* <!-- Product Item Start --> */}
                     <AnimatePresence mode="wait">
                         {filteredProducts.map((product, index) => (
@@ -110,7 +110,7 @@ export default function NewProducts() {
                                     <div className="label new">New</div>
                                     <ul className="product__hover">
                                         <li>
-                                            <a href="/" className="">
+                                            <a href="/productDetail" className="">
                                                 <span className="">
                                                     <FaRegEye />
                                                 </span >
@@ -133,7 +133,7 @@ export default function NewProducts() {
                                     </ul>
                                 </div>
                                 <div className="product__item__text">
-                                    <h6><a href="#">Headphone</a></h6>
+                                    <h6><a href="/productDetail">Headphone</a></h6>
                                     <div className="rating flex justify-center gap-2">
                                         <i className=""><BiStar size={16} /></i>
                                         <i className=""><BiStar size={16} /></i>
